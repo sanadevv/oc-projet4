@@ -1,0 +1,21 @@
+$location-color: #eaeaea;
+$footer-color: #363636;
+$main-color: #f6f6f6;
+$btn-gradient-color: linear-gradient(#ff79da, #9356dc);
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+@mixin btn-shadow {
+  box-shadow: 0px 4px 10px 0px #00000040;
+}
+@mixin list-style {
+  list-style-type: none;
+  padding-left: 0px;
+}

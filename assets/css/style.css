@@ -1,1 +1,224 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  font-family: "roboto", sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+}
+.header-logo img {
+  width: 200px;
+  height: 30px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  height: 50px;
+  gap: 17px;
+}
+.localisation #location {
+  border: 0px;
+  background-color: #eaeaea;
+  width: 110px;
+}
+.localisation #location::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #363636;
+}
+.localisation #location::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #363636;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 30px;
+}
+.presentation h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+.presentation p {
+  text-align: center;
+  font-size: 18px;
+}
+.presentation .btn-gradient {
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 25px;
+  height: 50px;
+  color: #eaeaea;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 19px;
+  padding-right: 19px;
+  margin: 20px;
+  border: 0px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.presentation .btn-gradient a {
+  text-decoration: none;
+  color: white;
+}
+
+.fonctionnement {
+  padding: 20px;
+}
+.fonctionnement ol {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-left: 10px;
+}
+.fonctionnement ol li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  gap: 30px;
+  background-color: #f6f6f6;
+  height: 73px;
+  border-radius: 20px;
+  position: relative;
+  padding-left: 35px;
+}
+.fonctionnement ol li .nbr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -10px;
+  background: #9356dc;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+}
+.fonctionnement ol li .nbr p {
+  color: white;
+}
+.fonctionnement ol li h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.fonctionnement ol li .fa-solid {
+  font-size: 20px;
+  color: #7e7e7e;
+}
+.fonctionnement ol li .fa-store {
+  color: #9356dc;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 65px 20px;
+}
+.restaurants h2 {
+  margin-top: 0px;
+}
+.restaurants .restaurant-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.restaurants .restaurant-card-container .restaurant-card {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  position: relative;
+}
+.restaurants .restaurant-card-container .restaurant-card .nouveau {
+  background-color: #99e2d0;
+  border-radius: 2px;
+  width: 80px;
+  height: 25px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+  text-align: center;
+  line-height: 25px;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+}
+.restaurants .restaurant-card-container .restaurant-card a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+.restaurants .restaurant-card-container .restaurant-card a img {
+  height: 200px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants .restaurant-card-container .restaurant-card a ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+  padding: 0px 15px;
+  line-height: 10px;
+}
+.restaurants .restaurant-card-container .restaurant-card a ul li .fa-heart {
+  font-size: 25px;
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #363636;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 5px 25px;
+}
+footer ul li .logo-blanc p {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 18px;
+}
+footer ul .footer-list {
+  padding: 0px;
+  margin: 0px;
+}
+footer ul .footer-list a {
+  color: white;
+  text-decoration: none;
+}
+footer ul .footer-list .fa-utensils {
+  font-size: 14px;
+}
+footer ul .footer-list .fa-handshake-angle {
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */

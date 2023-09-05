@@ -2,24 +2,8 @@
   font-family: "roboto", sans-serif;
 }
 
-// les variables
-$location-color: #eaeaea;
-$footer-color: #363636;
-$main-color: #f6f6f6;
-$btn-gradient-color: linear-gradient(#ff79da, #9356dc);
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@mixin flex-left {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-@mixin btn-shadow {
-  box-shadow: 0px 4px 10px 0px #00000040;
-}
+@import "variable";
+
 body {
   margin: 0px;
 }
@@ -88,7 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding-left: 0px;
+    @include list-style;
     margin-left: 10px;
 
     li {
@@ -165,24 +149,24 @@ body {
         text-decoration: none;
         position: relative;
         img {
-          height: 230px;
+          height: 200px;
           width: 100%;
           border-radius: 15px 15px 0px 0px;
           box-sizing: border-box;
+          object-fit: cover;
         }
         ul {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           position: relative;
-          list-style-type: none;
+          @include list-style;
           margin: 0px;
           padding: 0px 15px;
           line-height: 10px;
           li {
-            .fa-regular {
+            .fa-heart {
               font-size: 25px;
-              font-weight: 300;
               position: relative;
               top: 20px;
               right: 20px;
@@ -198,7 +182,7 @@ footer {
   background-color: $footer-color;
   color: white;
   ul {
-    padding: 0px;
+    @include list-style;
     margin: 5px 25px;
     li {
       .logo-blanc {
@@ -208,7 +192,7 @@ footer {
         }
       }
     }
-    list-style-type: none;
+
     .footer-list {
       a {
         color: white;
