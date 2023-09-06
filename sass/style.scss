@@ -49,30 +49,29 @@ body {
     font-size: 18px;
   }
   .btn-gradient {
+    text-decoration: none;
+    color: white;
     background: $btn-gradient-color;
     border-radius: 25px;
-    height: 50px;
+    height: auto;
     color: #eaeaea;
     font-weight: 500;
     font-size: 16px;
-    padding-left: 19px;
-    padding-right: 19px;
+    padding: 15px 19px;
     margin: 20px;
     border: 0px;
     @include btn-shadow();
-    a {
-      text-decoration: none;
-      color: white;
-    }
+    text-align: center;
   }
 }
+// section fonctionnement
 .fonctionnement {
-  padding: 20px;
+  padding: 20px 20px 60px 20px;
   ol {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    @include list-style;
+    @include list-style-none;
     margin-left: 10px;
 
     li {
@@ -111,89 +110,24 @@ body {
   }
 }
 // section restaurant
-.restaurants {
-  background-color: $main-color;
-  padding: 65px 20px;
-  h2 {
-    margin-top: 0px;
-  }
-  .restaurant-card-container {
-    @include flex-center();
-    flex-direction: column;
-    // padding: 20px;
-    gap: 20px;
-    position: relative;
-
-    .restaurant-card {
-      background-color: white;
-      border-radius: 15px;
-      width: 100%;
-      position: relative;
-      .nouveau {
-        background-color: #99e2d0;
-        border-radius: 2px;
-        width: 80px;
-        height: 25px;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        z-index: 5;
-        text-align: center;
-        line-height: 25px;
-        color: #008766;
-        font-size: 14px;
-        font-weight: 500;
-      }
-      a {
-        color: black;
-        text-decoration: none;
-        position: relative;
-        img {
-          height: 200px;
-          width: 100%;
-          border-radius: 15px 15px 0px 0px;
-          box-sizing: border-box;
-          object-fit: cover;
-        }
-        ul {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          position: relative;
-          @include list-style;
-          margin: 0px;
-          padding: 0px 15px;
-          line-height: 10px;
-          li {
-            .fa-heart {
-              font-size: 25px;
-              position: relative;
-              top: 20px;
-              right: 20px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// le code de la section restaurant et des cartes est dans le fichier index-card-restants.csss
 footer {
-  @include flex-left();
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
   background-color: $footer-color;
   color: white;
-  ul {
-    @include list-style;
-    margin: 5px 25px;
-    li {
-      .logo-blanc {
-        p {
-          font-family: "Shrikhand", sans-serif;
-          font-size: 18px;
-        }
-      }
+  padding: 25px 25px;
+  .logo-container {
+    .logo-blanc {
+      font-family: "Shrikhand", sans-serif;
+      font-size: 18px;
     }
-
-    .footer-list {
+  }
+  .footer-link-container {
+    .footer-link {
+      @include list-style-none;
       a {
         color: white;
         text-decoration: none;

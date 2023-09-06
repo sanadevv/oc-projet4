@@ -1,0 +1,67 @@
+@import "variable";
+.restaurants {
+  background-color: $main-color;
+  padding: 55px 20px 65px 20px;
+  h2 {
+    margin-top: 0px;
+  }
+  .restaurant-card-container {
+    @include flex-center();
+    flex-direction: column;
+    // padding: 20px;
+    gap: 20px;
+    position: relative;
+
+    .restaurant-card {
+      background-color: white;
+      border-radius: 15px;
+      width: 100%;
+      position: relative;
+      .nouveau {
+        background-color: #99e2d0;
+        border-radius: 2px;
+        width: 80px;
+        height: 25px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 5;
+        text-align: center;
+        line-height: 25px;
+        color: #008766;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        position: relative;
+        img {
+          height: 200px;
+          width: 100%;
+          border-radius: 15px 15px 0px 0px;
+          box-sizing: border-box;
+          object-fit: cover;
+        }
+        .restaurant-card-content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          position: relative;
+          @include list-style-none;
+          margin: 0px;
+          padding: 0px 15px;
+          line-height: 10px;
+          .restaurant-card-heart {
+            .fa-heart {
+              font-size: 25px;
+              position: relative;
+              top: 20px;
+              right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

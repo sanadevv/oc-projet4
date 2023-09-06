@@ -21,6 +21,7 @@ header .arrow .fa-arrow-left {
 
 main {
   position: relative;
+  background-color: #f6f6f6;
 }
 
 .img-restaurant img {
@@ -33,51 +34,54 @@ main {
 
 .menu-container {
   background-color: #f6f6f6;
+  position: relative;
+  top: -40px;
   border-radius: 40px 40px 0px 0px;
-  padding: 30px 20px 40px 20px;
 }
 .menu-container-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  top: -60px;
   background-color: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
+  padding: 30px 20px 10px 20px;
 }
 .menu-container-title h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   margin: 0px;
+  font-size: 28px;
 }
 .menu-container-title .fa-heart {
   font-size: 25px;
   margin-right: 30px;
 }
-.menu-container .menu-list {
+.menu-container-lists {
   list-style-type: none;
   padding-left: 0px;
+  margin-bottom: 0px;
 }
-.menu-container .menu-list-items {
-  list-style-type: none;
-  padding-left: 0px;
-}
-.menu-container .menu-list-items {
+.menu-container-lists .menu-list-items {
   display: flex;
   flex-direction: column;
   gap: 12px;
   color: #363636;
+  margin: 0px 20px 40px 20px;
 }
-.menu-container .menu-list-items h2 {
+.menu-container-lists .menu-list-items .menu-title h2 {
   font-weight: 300;
   font-size: 16px;
+  margin: 0px;
 }
-.menu-container .menu-list-items hr {
-  color: #99e2d0;
-  border: 1px;
+.menu-container-lists .menu-list-items .menu-title::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+  margin-top: 5px;
 }
-.menu-container .menu-list-items .menu-item {
+.menu-container-lists .menu-list-items .menu-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -87,6 +91,9 @@ main {
   padding: 0px 15px;
   line-height: 10px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.menu-container-lists .menu-list-items .menu-item p {
+  font-size: 15px;
 }
 .menu-container .btn-gradient-container {
   display: flex;
@@ -102,7 +109,6 @@ main {
   font-size: 16px;
   padding-left: 50px;
   padding-right: 50px;
-  margin-top: 40px;
   margin-bottom: 0px;
   border: 0px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);

@@ -2,6 +2,7 @@ $location-color: #eaeaea;
 $footer-color: #363636;
 $main-color: #f6f6f6;
 $btn-gradient-color: linear-gradient(#ff79da, #9356dc);
+$line-color: #99e2d0;
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -15,7 +16,7 @@ $btn-gradient-color: linear-gradient(#ff79da, #9356dc);
 @mixin btn-shadow {
   box-shadow: 0px 4px 10px 0px #00000040;
 }
-@mixin list-style {
+@mixin list-style-none {
   list-style-type: none;
   padding-left: 0px;
 }
