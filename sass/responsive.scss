@@ -1,0 +1,182 @@
+// responsive tablette de la page d'acceuil
+@media (min-width: 767.98px) {
+  .presentation {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .fonctionnement {
+    padding: 50px 100px;
+    .fonctionnement-list {
+      flex-direction: row;
+      gap: 20px;
+      li {
+        gap: 15px;
+        width: 30%;
+        padding-right: 10px;
+        padding-left: 25px;
+        .fa-solid {
+          font-size: 14px;
+        }
+        h3 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .restaurants {
+    padding: 30px 100px;
+    .restaurant-card-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 50px;
+      column-gap: 80px;
+    }
+  }
+  footer {
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: last baseline;
+    gap: 50px;
+    padding: 30px 50px;
+    .logo-blanc {
+      font-size: 14px;
+    }
+    .footer-link-container {
+      padding-top: 30px;
+
+      .footer-link {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        li {
+          a {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+// responsive desktop de la page d'acceuil
+@media (min-width: 1024px) {
+  .presentation {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .fonctionnement {
+    padding: 50px 180px;
+    .fonctionnement-list {
+      flex-direction: row;
+      li {
+        width: 30%;
+      }
+    }
+  }
+  .restaurants {
+    padding: 30px 180px;
+    .restaurant-card-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 50px;
+      column-gap: 100px;
+    }
+  }
+  footer {
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: last baseline;
+    gap: 50px;
+    padding: 30px 50px;
+    .logo-blanc {
+      font-size: 14px;
+    }
+    .footer-link-container {
+      padding-top: 30px;
+
+      .footer-link {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        li {
+          a {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+// responsive tablette pour les pages restaurants
+@media (min-width: 767.98px) {
+  .menu-container-container {
+    margin: 0px 100px;
+    .menu-container {
+      padding: 0px 100px;
+      &-title {
+        justify-content: center;
+        gap: 25px;
+        h1 {
+          font-size: 20px;
+        }
+        .fa-heart {
+          font-size: 20px;
+        }
+      }
+      &-lists {
+        .menu-list-items {
+          .menu-item {
+            h3 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// responsive desktop pour les pages restaurants
+@media (min-width: 950px) {
+  .menu-container-container {
+    margin: 0px 130px;
+    .menu-container {
+      padding: 0px 150px;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .menu-container-container {
+    margin: 0px 190px;
+    .menu-container {
+      padding: 0px 210px;
+      &-title {
+        justify-content: center;
+        gap: 25px;
+        h1 {
+          font-size: 28px;
+        }
+        .fa-heart {
+          font-size: 28px;
+        }
+      }
+      &-lists {
+        .menu-list-items {
+          .menu-item {
+            h3 {
+              font-size: 18px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -33,12 +33,12 @@ body {
 .localisation #location::-moz-placeholder {
   font-size: 16px;
   font-weight: 500;
-  color: #363636;
+  color: #353535;
 }
 .localisation #location::placeholder {
   font-size: 16px;
   font-weight: 500;
-  color: #363636;
+  color: #353535;
 }
 
 .presentation {
@@ -57,6 +57,7 @@ body {
 .presentation p {
   text-align: center;
   font-size: 18px;
+  color: #353535;
 }
 .presentation .btn-gradient {
   text-decoration: none;
@@ -64,7 +65,6 @@ body {
   background: linear-gradient(#ff79da, #9356dc);
   border-radius: 25px;
   height: auto;
-  color: #eaeaea;
   font-weight: 500;
   font-size: 16px;
   padding: 15px 19px;
@@ -77,7 +77,7 @@ body {
 .fonctionnement {
   padding: 20px 20px 60px 20px;
 }
-.fonctionnement ol {
+.fonctionnement-list {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -85,7 +85,7 @@ body {
   padding-left: 0px;
   margin-left: 10px;
 }
-.fonctionnement ol li {
+.fonctionnement-list li {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -97,7 +97,7 @@ body {
   position: relative;
   padding-left: 35px;
 }
-.fonctionnement ol li .nbr {
+.fonctionnement-list li .nbr {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,18 +108,19 @@ body {
   height: 24px;
   border-radius: 24px;
 }
-.fonctionnement ol li .nbr p {
+.fonctionnement-list li .nbr p {
   color: white;
+  font-size: 12px;
 }
-.fonctionnement ol li h3 {
+.fonctionnement-list li h3 {
   font-weight: 500;
   font-size: 16px;
 }
-.fonctionnement ol li .fa-solid {
+.fonctionnement-list li .fa-solid {
   font-size: 20px;
   color: #7e7e7e;
 }
-.fonctionnement ol li .fa-store {
+.fonctionnement-list li .fa-store {
   color: #9356dc;
 }
 
@@ -128,7 +129,7 @@ footer {
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  background-color: #363636;
+  background-color: #353535;
   color: white;
   padding: 25px 25px;
 }

@@ -47,6 +47,7 @@ body {
   p {
     text-align: center;
     font-size: 18px;
+    color: $footer-color;
   }
   .btn-gradient {
     text-decoration: none;
@@ -54,7 +55,6 @@ body {
     background: $btn-gradient-color;
     border-radius: 25px;
     height: auto;
-    color: #eaeaea;
     font-weight: 500;
     font-size: 16px;
     padding: 15px 19px;
@@ -67,7 +67,7 @@ body {
 // section fonctionnement
 .fonctionnement {
   padding: 20px 20px 60px 20px;
-  ol {
+  &-list {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -75,8 +75,8 @@ body {
     margin-left: 10px;
 
     li {
-      @include flex-left();
-      @include btn-shadow();
+      @include flex-left;
+      @include btn-shadow;
       gap: 30px;
       background-color: $main-color;
       height: 73px;
@@ -87,12 +87,13 @@ body {
         @include flex-center();
         position: absolute;
         left: -10px;
-        background: #9356dc;
+        background: $numbering-color;
         width: 24px;
         height: 24px;
         border-radius: 24px;
         p {
           color: white;
+          font-size: 12px;
         }
       }
       h3 {
@@ -101,16 +102,16 @@ body {
       }
       .fa-solid {
         font-size: 20px;
-        color: #7e7e7e;
+        color: $icone-color;
       }
       .fa-store {
-        color: #9356dc;
+        color: $numbering-color;
       }
     }
   }
 }
 // section restaurant
-// le code de la section restaurant et des cartes est dans le fichier index-card-restants.csss
+// le code de la section restaurant et des cartes est dans le fichier index-card-restants.scss
 footer {
   display: flex;
   justify-content: center;

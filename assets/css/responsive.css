@@ -1,0 +1,158 @@
+@media (min-width: 767.98px) {
+  .presentation h1 {
+    font-size: 40px;
+  }
+  .fonctionnement {
+    padding: 50px 100px;
+  }
+  .fonctionnement .fonctionnement-list {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .fonctionnement .fonctionnement-list li {
+    gap: 15px;
+    width: 30%;
+    padding-right: 10px;
+    padding-left: 25px;
+  }
+  .fonctionnement .fonctionnement-list li .fa-solid {
+    font-size: 14px;
+  }
+  .fonctionnement .fonctionnement-list li h3 {
+    font-size: 14px;
+  }
+  .restaurants {
+    padding: 30px 100px;
+  }
+  .restaurants .restaurant-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+  footer {
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: last baseline;
+    gap: 50px;
+    padding: 30px 50px;
+  }
+  footer .logo-blanc {
+    font-size: 14px;
+  }
+  footer .footer-link-container {
+    padding-top: 30px;
+  }
+  footer .footer-link-container .footer-link {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  footer .footer-link-container .footer-link li a {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1024px) {
+  .presentation h1 {
+    font-size: 40px;
+  }
+  .fonctionnement {
+    padding: 50px 180px;
+  }
+  .fonctionnement .fonctionnement-list {
+    flex-direction: row;
+  }
+  .fonctionnement .fonctionnement-list li {
+    width: 30%;
+  }
+  .restaurants {
+    padding: 30px 180px;
+  }
+  .restaurants .restaurant-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+  footer {
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: last baseline;
+    gap: 50px;
+    padding: 30px 50px;
+  }
+  footer .logo-blanc {
+    font-size: 14px;
+  }
+  footer .footer-link-container {
+    padding-top: 30px;
+  }
+  footer .footer-link-container .footer-link {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  footer .footer-link-container .footer-link li a {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 767.98px) {
+  .menu-container-container {
+    margin: 0px 100px;
+  }
+  .menu-container-container .menu-container {
+    padding: 0px 100px;
+  }
+  .menu-container-container .menu-container-title {
+    justify-content: center;
+    gap: 25px;
+  }
+  .menu-container-container .menu-container-title h1 {
+    font-size: 20px;
+  }
+  .menu-container-container .menu-container-title .fa-heart {
+    font-size: 20px;
+  }
+  .menu-container-container .menu-container-lists .menu-list-items .menu-item h3 {
+    font-size: 16px;
+  }
+  .menu-container-container .menu-container-lists .menu-list-items .menu-item p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 950px) {
+  .menu-container-container {
+    margin: 0px 130px;
+  }
+  .menu-container-container .menu-container {
+    padding: 0px 150px;
+  }
+}
+@media (min-width: 1240px) {
+  .menu-container-container {
+    margin: 0px 190px;
+  }
+  .menu-container-container .menu-container {
+    padding: 0px 210px;
+  }
+  .menu-container-container .menu-container-title {
+    justify-content: center;
+    gap: 25px;
+  }
+  .menu-container-container .menu-container-title h1 {
+    font-size: 28px;
+  }
+  .menu-container-container .menu-container-title .fa-heart {
+    font-size: 28px;
+  }
+  .menu-container-container .menu-container-lists .menu-list-items .menu-item h3 {
+    font-size: 18px;
+  }
+  .menu-container-container .menu-container-lists .menu-list-items .menu-item p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
