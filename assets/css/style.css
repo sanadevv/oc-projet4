@@ -72,6 +72,12 @@ body {
   border: 0px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   text-align: center;
+  transition: opacity 300ms;
+  transition: box-shadow 300ms;
+}
+.presentation .btn-gradient:hover {
+  opacity: 0.85;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.3764705882);
 }
 
 .fonctionnement {

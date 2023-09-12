@@ -57,6 +57,20 @@ header .arrow .fa-arrow-left {
   font-size: 25px;
   margin-right: 30px;
 }
+.menu-container-container .menu-container-title .heart-label {
+  cursor: pointer;
+  display: inline-block;
+}
+.menu-container-container .menu-container-title .heart-label input[type=checkbox] {
+  display: none;
+}
+.menu-container-container .menu-container-title .heart-label input[type=checkbox]:checked + i::before {
+  font-weight: 900 !important;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .menu-container-container .menu-container-lists {
   list-style-type: none;
   padding-left: 0px;
@@ -98,6 +112,16 @@ header .arrow .fa-arrow-left {
 .menu-container-container .menu-container-lists .menu-list-items .menu-item .item-price p {
   font-weight: 700;
 }
+.menu-container-container .menu-container-lists .menu-list-items .menu-anim-label {
+  cursor: pointer;
+  display: inline-block;
+}
+.menu-container-container .menu-container-lists .menu-list-items .menu-anim-label input[type=checkbox] {
+  display: none;
+}
+.menu-container-container .menu-container-lists .menu-list-items .menu-anim-label input[type=checkbox]:checked {
+  background-color: #99e2d0;
+}
 .menu-container-container .menu-container .btn-gradient-container {
   display: flex;
   justify-content: center;
@@ -115,8 +139,14 @@ header .arrow .fa-arrow-left {
   margin-bottom: 0px;
   border: 0px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: opacity 300ms;
+  transition: box-shadow 300ms;
 }
 .menu-container-container .menu-container .btn-gradient-container .btn-gradient a {
   text-decoration: none;
   color: white;
+}
+.menu-container-container .menu-container .btn-gradient-container .btn-gradient:hover {
+  opacity: 0.85;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.3764705882);
 }/*# sourceMappingURL=restaurant.css.map */

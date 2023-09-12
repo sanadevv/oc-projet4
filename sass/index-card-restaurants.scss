@@ -54,11 +54,15 @@
           line-height: 10px;
           .restaurant-card-heart {
             .fa-heart {
+              font-weight: 100 !important;
               font-size: 25px;
               position: relative;
               top: 20px;
               right: 20px;
+              z-index: 1;
+              transition: background 300ms;
             }
+            @include animation-coeur;
           }
         }
       }
