@@ -76,8 +76,9 @@
 }
 .restaurants .restaurant-card-container .restaurant-card a .restaurant-card-content .restaurant-card-heart .heart-label input[type=checkbox]:checked + i::before {
   font-weight: 900 !important;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
+  background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
+          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-}/*# sourceMappingURL=index-card-restaurants.css.map */
+}/*# sourceMappingURL=card-restaurants.css.map */

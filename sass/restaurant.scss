@@ -25,9 +25,10 @@ header {
     width: 100%;
     box-sizing: border-box;
     object-fit: cover;
+    background-position: center;
   }
 }
-.menu-container-container {
+.menu-section {
   position: relative;
   background-color: $main-color;
   .menu-container {
@@ -42,8 +43,6 @@ header {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      // position: relative;
-      // top: -40px;
       background-color: $main-color;
       border-radius: 40px 40px 0px 0px;
       padding: 30px 20px 10px 20px;
@@ -66,13 +65,14 @@ header {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        color: $footer-color;
+
         margin: 0px 20px 40px 20px;
         .menu-title {
           h2 {
             font-weight: 300;
             font-size: 16px;
             margin: 0px;
+            color: $footer-color;
           }
         }
         .menu-title::after {
@@ -82,7 +82,13 @@ header {
           width: 40px;
           margin-top: 5px;
         }
+        // animation du check
+        .check-checkbox {
+          display: none;
+        }
 
+        // .check-label {
+        //   cursor: pointer;
         .menu-item {
           display: flex;
           flex-direction: row;
@@ -90,19 +96,121 @@ header {
           align-items: center;
           background-color: white;
           border-radius: 15px;
-          padding: 0px 15px;
-          line-height: 10px;
+          padding-left: 15px;
+          height: 80px;
           @include btn-shadow;
-          p {
-            font-size: 15px;
+          text-overflow: ellipsis;
+          .menu-text {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            h3 {
+              width: auto;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+            p {
+              width: auto;
+              font-size: 15px;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
           }
-          .item-price {
+          .menu-price {
+            overflow: hidden;
+            @include flex-center;
+            height: 100%;
             p {
               font-weight: 700;
+              padding-right: 15px;
+            }
+
+            .menu-check {
+              width: 60px;
+              height: 100%;
+              @include flex-center;
+              background: $line-color;
+              border-radius: 0px 15px 15px 0px;
+              margin-right: -60px;
+
+              .fa-check {
+                color: $line-color;
+                background-color: white;
+                border-radius: 100%;
+                font-size: 15px;
+                padding: 5px;
+              }
+
+              transition: all 300ms ease-in-out;
+            }
+          }
+
+          &:hover {
+            .menu-check {
+              margin-right: 0px;
             }
           }
         }
-        @include animation-menu;
+        // animation des menus
+        @keyframes fade-in {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .menu-item1 {
+          animation: fade-in 0.5s ease 0.2s both;
+        }
+        .menu-item2 {
+          animation: fade-in 0.5s ease 0.4s both;
+        }
+        .menu-item3 {
+          animation: fade-in 0.5s ease 0.6s both;
+        }
+        .menu-item4 {
+          animation: fade-in 0.5s ease 0.8s both;
+        }
+        .menu-item5 {
+          animation: fade-in 0.5s ease 1s both;
+        }
+        .menu-item6 {
+          animation: fade-in 0.5s ease 1.2s both;
+        }
+        .menu-item7 {
+          animation: fade-in 0.5s ease 1.4s both;
+        }
+        .menu-item8 {
+          animation: fade-in 0.5s ease 1.6s both;
+        }
+        .menu-item9 {
+          animation: fade-in 0.5s ease 1.8s both;
+        }
+        // fin de l'animation des menus
+        @keyframes fade-in-title {
+          0% {
+            opacity: 0;
+            transform: translateX(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        .menu-title1 {
+          animation: fade-in-title 0.5s ease 0.1s both;
+        }
+        .menu-title2 {
+          animation: fade-in-title 0.5s ease 0.7s both;
+        }
+        .menu-title3 {
+          animation: fade-in-title 0.5s ease 1.3s both;
+        }
       }
     }
     .btn-gradient-container {
