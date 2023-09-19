@@ -112,7 +112,7 @@
 }
 // responsive tablette pour les pages restaurants
 @media (min-width: 767.98px) {
-  .menu-container-container {
+  .menu-section {
     margin: 0px 100px;
     .menu-container {
       padding: 0px 100px;
@@ -143,7 +143,7 @@
 }
 // responsive desktop pour les pages restaurants
 @media (min-width: 950px) {
-  .menu-container-container {
+  .menu-section {
     margin: 0px 130px;
     .menu-container {
       padding: 0px 150px;
@@ -151,7 +151,7 @@
   }
 }
 @media (min-width: 1240px) {
-  .menu-container-container {
+  .menu-section {
     margin: 0px 190px;
     .menu-container {
       padding: 0px 210px;

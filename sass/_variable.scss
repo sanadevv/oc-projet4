@@ -35,22 +35,22 @@ $icone-color: #7e7e7e;
     // }
     input[type="checkbox"]:checked + i::before {
       font-weight: 900 !important;
-      background: -webkit-linear-gradient(#9356dc, #ff79da);
+      background: linear-gradient(#9356dc, #ff79da);
       background-clip: text;
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
 }
-@mixin animation-menu {
+@mixin animation-check {
   .menu-anim-label {
     cursor: pointer;
     display: inline-block;
     input[type="checkbox"] {
       display: none;
     }
-    input[type="checkbox"]:checked {
-      background-color: #99e2d0;
-    }
+    // input[type="checkbox"]:checked {
+
+    // }
   }
 }

@@ -101,58 +101,58 @@
   }
 }
 @media (min-width: 767.98px) {
-  .menu-container-container {
+  .menu-section {
     margin: 0px 100px;
   }
-  .menu-container-container .menu-container {
+  .menu-section .menu-container {
     padding: 0px 100px;
   }
-  .menu-container-container .menu-container-title {
+  .menu-section .menu-container-title {
     justify-content: center;
     gap: 25px;
   }
-  .menu-container-container .menu-container-title h1 {
+  .menu-section .menu-container-title h1 {
     font-size: 20px;
   }
-  .menu-container-container .menu-container-title .fa-heart {
+  .menu-section .menu-container-title .fa-heart {
     font-size: 20px;
   }
-  .menu-container-container .menu-container-lists .menu-list-items .menu-item h3 {
+  .menu-section .menu-container-lists .menu-list-items .menu-item h3 {
     font-size: 16px;
   }
-  .menu-container-container .menu-container-lists .menu-list-items .menu-item p {
+  .menu-section .menu-container-lists .menu-list-items .menu-item p {
     font-size: 12px;
   }
 }
 @media (min-width: 950px) {
-  .menu-container-container {
+  .menu-section {
     margin: 0px 130px;
   }
-  .menu-container-container .menu-container {
+  .menu-section .menu-container {
     padding: 0px 150px;
   }
 }
 @media (min-width: 1240px) {
-  .menu-container-container {
+  .menu-section {
     margin: 0px 190px;
   }
-  .menu-container-container .menu-container {
+  .menu-section .menu-container {
     padding: 0px 210px;
   }
-  .menu-container-container .menu-container-title {
+  .menu-section .menu-container-title {
     justify-content: center;
     gap: 25px;
   }
-  .menu-container-container .menu-container-title h1 {
+  .menu-section .menu-container-title h1 {
     font-size: 28px;
   }
-  .menu-container-container .menu-container-title .fa-heart {
+  .menu-section .menu-container-title .fa-heart {
     font-size: 28px;
   }
-  .menu-container-container .menu-container-lists .menu-list-items .menu-item h3 {
+  .menu-section .menu-container-lists .menu-list-items .menu-item h3 {
     font-size: 18px;
   }
-  .menu-container-container .menu-container-lists .menu-list-items .menu-item p {
+  .menu-section .menu-container-lists .menu-list-items .menu-item p {
     font-size: 15px;
   }
 }/*# sourceMappingURL=responsive.css.map */
