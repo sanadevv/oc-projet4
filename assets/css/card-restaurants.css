@@ -85,4 +85,17 @@
 .restaurants .restaurant-card-container .restaurant-card a .restaurant-card-content .restaurant-card-heart .fa-solid:hover {
   opacity: 1;
   transform: scale(1.2);
+}
+
+@media (min-width: 768.98px) {
+  .restaurants {
+    padding: 30px 10%;
+  }
+  .restaurants .restaurant-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
 }/*# sourceMappingURL=card-restaurants.css.map */

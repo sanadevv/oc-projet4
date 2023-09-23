@@ -107,13 +107,6 @@ header {
           width: 40px;
           margin-top: 5px;
         }
-        // animation du check
-        .check-checkbox {
-          display: none;
-        }
-
-        // .check-label {
-        //   cursor: pointer;
         .menu-item {
           display: flex;
           flex-direction: row;
@@ -122,7 +115,7 @@ header {
           background-color: white;
           border-radius: 15px;
           padding-left: 15px;
-          height: 80px;
+          height: 70px;
           @include btn-shadow;
           text-overflow: ellipsis;
           .menu-text {
@@ -130,17 +123,22 @@ header {
             overflow: hidden;
             white-space: nowrap;
             h3 {
+              font-size: 18px;
+              font-weight: 500;
               width: auto;
               text-overflow: ellipsis;
               overflow: hidden;
               white-space: nowrap;
+              margin-bottom: 5px;
             }
             p {
               width: auto;
               font-size: 15px;
+              font-weight: 300;
               text-overflow: ellipsis;
               overflow: hidden;
               white-space: nowrap;
+              margin-top: 0px;
             }
           }
           .menu-price {
@@ -158,7 +156,6 @@ header {
               @include flex-center;
               background: $line-color;
               border-radius: 0px 15px 15px 0px;
-              // margin-right: -60px;
               overflow: hidden;
               .fa-check {
                 color: $line-color;
@@ -266,6 +263,37 @@ header {
         &:hover {
           opacity: 0.85;
           box-shadow: 0px 8px 15px 0px #00000060;
+        }
+      }
+    }
+  }
+}
+// responsive desktop pour les pages restaurants
+@media (min-width: 767.98px) {
+  .menu-section {
+    margin: 0px 13%;
+    .menu-container {
+      padding: 0px 15%;
+      &-title {
+        justify-content: center;
+        gap: 25px;
+        h1 {
+          font-size: 28px;
+        }
+        .fa-heart {
+          font-size: 28px;
+        }
+      }
+      &-lists {
+        .menu-list-items {
+          .menu-item {
+            h3 {
+              font-size: 18px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
         }
       }
     }

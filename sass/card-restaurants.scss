@@ -88,3 +88,14 @@
     }
   }
 }
+@media (min-width: 768.98px) {
+  .restaurants {
+    padding: 30px 10%;
+    .restaurant-card-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 50px;
+      column-gap: 80px;
+    }
+  }
+}
