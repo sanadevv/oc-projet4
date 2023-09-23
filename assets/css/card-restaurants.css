@@ -58,27 +58,44 @@
   padding: 0px 15px;
   line-height: 10px;
 }
-.restaurants .restaurant-card-container .restaurant-card a .restaurant-card-content .restaurant-card-heart .fa-heart {
-  font-weight: 100 !important;
+.restaurants .restaurant-card-container .restaurant-card a .restaurant-card-content .restaurant-card-heart .fa-regular {
   font-size: 25px;
   position: relative;
   top: 20px;
-  right: 20px;
-  z-index: 1;
-  transition: background 300ms;
+  right: -18px;
+  transition: all 300ms ease-in-out;
 }
-.restaurants .restaurant-card-container .restaurant-card a .restaurant-card-content .restaurant-card-heart .heart-label {
-  cursor: pointer;
-  display: inline-block;
-}
-.restaurants .restaurant-card-container .restaurant-card a .restaurant-card-content .restaurant-card-heart .heart-label input[type=checkbox] {
-  display: none;
-}
-.restaurants .restaurant-card-container .restaurant-card a .restaurant-card-content .restaurant-card-heart .heart-label input[type=checkbox]:checked + i::before {
-  font-weight: 900 !important;
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-          background-clip: text;
+.restaurants .restaurant-card-container .restaurant-card a .restaurant-card-content .restaurant-card-heart .fa-solid {
+  font-size: 25px;
+  position: relative;
+  top: 20px;
+  right: 11px;
   background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+.restaurants .restaurant-card-container .restaurant-card a .restaurant-card-content .restaurant-card-heart .fa-regular:hover {
+  opacity: 0;
+}
+.restaurants .restaurant-card-container .restaurant-card a .restaurant-card-content .restaurant-card-heart .fa-solid:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+@media (min-width: 768.98px) {
+  .restaurants {
+    padding: 30px 10%;
+  }
+  .restaurants .restaurant-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
 }/*# sourceMappingURL=card-restaurants.css.map */

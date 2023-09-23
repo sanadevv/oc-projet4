@@ -18,12 +18,12 @@ body {
   @include flex-center;
   z-index: 10;
   animation: stop-loader 50ms;
-  animation-delay: 5s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   transform-origin: top;
   .lettre {
     font-family: shrikhand;
-    font-size: 40px;
+    font-size: 60px;
     background: $btn-gradient-color;
     background-clip: text;
     -webkit-background-clip: text;
@@ -36,7 +36,6 @@ body {
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      // text-shadow: 0 0 7px rgb(197, 197, 132);
     }
     90% {
       background: #dfc4c4;
@@ -226,6 +225,51 @@ footer {
       }
       .fa-handshake-angle {
         font-size: 12px;
+      }
+    }
+  }
+}
+// responsive desktop de la page d'acceuil
+
+@media (min-width: 767.98px) {
+  .presentation {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .fonctionnement {
+    padding: 50px 10%;
+    .fonctionnement-list {
+      flex-direction: row;
+      li {
+        width: 30%;
+        padding-right: 10px;
+      }
+    }
+  }
+  // le responsive de la section restaurant est dans le fichier card-restaurants.scss
+  footer {
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: last baseline;
+    gap: 50px;
+    padding: 30px 50px;
+    .logo-blanc {
+      font-size: 14px;
+    }
+    .footer-link-container {
+      padding-top: 30px;
+
+      .footer-link {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        li {
+          a {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
       }
     }
   }

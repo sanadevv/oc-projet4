@@ -53,19 +53,49 @@
           padding: 0px 15px;
           line-height: 10px;
           .restaurant-card-heart {
-            .fa-heart {
-              font-weight: 100 !important;
+            .fa-regular {
               font-size: 25px;
               position: relative;
               top: 20px;
-              right: 20px;
-              z-index: 1;
-              transition: background 300ms;
+              right: -18px;
+              transition: all 300ms ease-in-out;
             }
-            @include animation-coeur;
+            .fa-solid {
+              font-size: 25px;
+              position: relative;
+              top: 20px;
+              right: 11px;
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+              -webkit-text-fill-color: transparent;
+              font-weight: 900;
+              background-image: $btn-gradient-color;
+              opacity: 0;
+              transition: all 300ms ease-in-out;
+            }
+
+            .fa-regular:hover {
+              opacity: 0;
+            }
+            .fa-solid:hover {
+              opacity: 1;
+              transform: scale(1.2);
+            }
           }
         }
       }
+    }
+  }
+}
+@media (min-width: 768.98px) {
+  .restaurants {
+    padding: 30px 10%;
+    .restaurant-card-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 50px;
+      column-gap: 80px;
     }
   }
 }

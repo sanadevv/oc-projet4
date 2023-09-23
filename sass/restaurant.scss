@@ -52,11 +52,36 @@ header {
         margin: 0px;
         font-size: 28px;
       }
-      .fa-heart {
-        font-size: 25px;
-        margin-right: 30px;
+      .heart {
+        .fa-regular {
+          font-size: 25px;
+          position: relative;
+          left: 15px;
+          transition: all 300ms ease-in-out;
+        }
+        .fa-solid {
+          font-size: 25px;
+          position: relative;
+
+          right: 14px;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
+          font-weight: 900;
+          background-image: $btn-gradient-color;
+          opacity: 0;
+          transition: all 300ms ease-in-out;
+        }
+
+        .fa-regular:hover {
+          opacity: 0;
+        }
+        .fa-solid:hover {
+          opacity: 1;
+          transform: scale(1.2);
+        }
       }
-      @include animation-coeur;
     }
     &-lists {
       @include list-style-none;
@@ -82,13 +107,6 @@ header {
           width: 40px;
           margin-top: 5px;
         }
-        // animation du check
-        .check-checkbox {
-          display: none;
-        }
-
-        // .check-label {
-        //   cursor: pointer;
         .menu-item {
           display: flex;
           flex-direction: row;
@@ -97,7 +115,7 @@ header {
           background-color: white;
           border-radius: 15px;
           padding-left: 15px;
-          height: 80px;
+          height: 70px;
           @include btn-shadow;
           text-overflow: ellipsis;
           .menu-text {
@@ -105,17 +123,22 @@ header {
             overflow: hidden;
             white-space: nowrap;
             h3 {
+              font-size: 18px;
+              font-weight: 500;
               width: auto;
               text-overflow: ellipsis;
               overflow: hidden;
               white-space: nowrap;
+              margin-bottom: 5px;
             }
             p {
               width: auto;
               font-size: 15px;
+              font-weight: 300;
               text-overflow: ellipsis;
               overflow: hidden;
               white-space: nowrap;
+              margin-top: 0px;
             }
           }
           .menu-price {
@@ -128,13 +151,12 @@ header {
             }
 
             .menu-check {
-              width: 60px;
+              width: 0px;
               height: 100%;
               @include flex-center;
               background: $line-color;
               border-radius: 0px 15px 15px 0px;
-              margin-right: -60px;
-
+              overflow: hidden;
               .fa-check {
                 color: $line-color;
                 background-color: white;
@@ -149,7 +171,7 @@ header {
 
           &:hover {
             .menu-check {
-              margin-right: 0px;
+              width: 60px;
             }
           }
         }
@@ -158,6 +180,9 @@ header {
           0% {
             opacity: 0;
             transform: translateY(20px);
+          }
+          50% {
+            opacity: 0.5;
           }
           100% {
             opacity: 1;
@@ -168,28 +193,28 @@ header {
           animation: fade-in 0.5s ease 0.2s both;
         }
         .menu-item2 {
-          animation: fade-in 0.5s ease 0.4s both;
+          animation: fade-in 0.5s ease 0.3s both;
         }
         .menu-item3 {
-          animation: fade-in 0.5s ease 0.6s both;
+          animation: fade-in 0.5s ease 0.4s both;
         }
         .menu-item4 {
-          animation: fade-in 0.5s ease 0.8s both;
+          animation: fade-in 0.5s ease 0.5s both;
         }
         .menu-item5 {
-          animation: fade-in 0.5s ease 1s both;
+          animation: fade-in 0.5s ease 0.6s both;
         }
         .menu-item6 {
-          animation: fade-in 0.5s ease 1.2s both;
+          animation: fade-in 0.5s ease 0.7s both;
         }
         .menu-item7 {
-          animation: fade-in 0.5s ease 1.4s both;
+          animation: fade-in 0.5s ease 0.8s both;
         }
         .menu-item8 {
-          animation: fade-in 0.5s ease 1.6s both;
+          animation: fade-in 0.5s ease 0.9s both;
         }
         .menu-item9 {
-          animation: fade-in 0.5s ease 1.8s both;
+          animation: fade-in 0.5s ease 1s both;
         }
         // fin de l'animation des menus
         @keyframes fade-in-title {
@@ -206,10 +231,10 @@ header {
           animation: fade-in-title 0.5s ease 0.1s both;
         }
         .menu-title2 {
-          animation: fade-in-title 0.5s ease 0.7s both;
+          animation: fade-in-title 0.5s ease 0.5s both;
         }
         .menu-title3 {
-          animation: fade-in-title 0.5s ease 1.3s both;
+          animation: fade-in-title 0.5s ease 0.8s both;
         }
       }
     }
@@ -238,6 +263,37 @@ header {
         &:hover {
           opacity: 0.85;
           box-shadow: 0px 8px 15px 0px #00000060;
+        }
+      }
+    }
+  }
+}
+// responsive desktop pour les pages restaurants
+@media (min-width: 767.98px) {
+  .menu-section {
+    margin: 0px 13%;
+    .menu-container {
+      padding: 0px 15%;
+      &-title {
+        justify-content: center;
+        gap: 25px;
+        h1 {
+          font-size: 28px;
+        }
+        .fa-heart {
+          font-size: 28px;
+        }
+      }
+      &-lists {
+        .menu-list-items {
+          .menu-item {
+            h3 {
+              font-size: 18px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
         }
       }
     }

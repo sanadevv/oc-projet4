@@ -18,13 +18,13 @@ body {
   align-items: center;
   z-index: 10;
   animation: stop-loader 50ms;
-  animation-delay: 5s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   transform-origin: top;
 }
 .loader .lettre {
   font-family: shrikhand;
-  font-size: 40px;
+  font-size: 60px;
   background: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
@@ -239,4 +239,42 @@ footer .footer-link-container .footer-link .fa-utensils {
 }
 footer .footer-link-container .footer-link .fa-handshake-angle {
   font-size: 12px;
+}
+
+@media (min-width: 767.98px) {
+  .presentation h1 {
+    font-size: 40px;
+  }
+  .fonctionnement {
+    padding: 50px 10%;
+  }
+  .fonctionnement .fonctionnement-list {
+    flex-direction: row;
+  }
+  .fonctionnement .fonctionnement-list li {
+    width: 30%;
+    padding-right: 10px;
+  }
+  footer {
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: last baseline;
+    gap: 50px;
+    padding: 30px 50px;
+  }
+  footer .logo-blanc {
+    font-size: 14px;
+  }
+  footer .footer-link-container {
+    padding-top: 30px;
+  }
+  footer .footer-link-container .footer-link {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  footer .footer-link-container .footer-link li a {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=index.css.map */
