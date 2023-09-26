@@ -33,7 +33,6 @@ header {
   background-color: $main-color;
   .menu-container {
     background-color: $main-color;
-    // padding-top: -40px;
     z-index: 5;
     position: relative;
     top: -40px;
@@ -142,7 +141,6 @@ header {
             }
           }
           .menu-price {
-            overflow: hidden;
             @include flex-center;
             height: 100%;
             p {
@@ -198,6 +196,9 @@ header {
         .menu-item3 {
           animation: fade-in 0.5s ease 0.4s both;
         }
+        .menu-item34 {
+          animation: fade-in 0.5s ease 0.45s both;
+        }
         .menu-item4 {
           animation: fade-in 0.5s ease 0.5s both;
         }
@@ -250,7 +251,6 @@ header {
         font-size: 16px;
         padding-left: 50px;
         padding-right: 50px;
-        // margin-top: 20px;
         margin-bottom: 0px;
         border: 0px;
         @include btn-shadow;
@@ -268,6 +268,7 @@ header {
     }
   }
 }
+
 // responsive desktop pour les pages restaurants
 @media (min-width: 767.98px) {
   .menu-section {

@@ -87,7 +87,7 @@
   transform: scale(1.2);
 }
 
-@media (min-width: 768.98px) {
+@media (min-width: 767.98px) {
   .restaurants {
     padding: 30px 10%;
   }
