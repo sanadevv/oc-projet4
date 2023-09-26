@@ -140,7 +140,6 @@ header .arrow .fa-arrow-left {
   margin-top: 0px;
 }
 .menu-section .menu-container-lists .menu-list-items .menu-item .menu-price {
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,6 +191,9 @@ header .arrow .fa-arrow-left {
 }
 .menu-section .menu-container-lists .menu-list-items .menu-item3 {
   animation: fade-in 0.5s ease 0.4s both;
+}
+.menu-section .menu-container-lists .menu-list-items .menu-item34 {
+  animation: fade-in 0.5s ease 0.45s both;
 }
 .menu-section .menu-container-lists .menu-list-items .menu-item4 {
   animation: fade-in 0.5s ease 0.5s both;
