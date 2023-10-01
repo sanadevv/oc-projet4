@@ -188,7 +188,13 @@ body {
         font-size: 20px;
         color: $icone-color;
       }
-      .fa-store {
+      // .fa-store {
+      //   color: $numbering-color;
+      // }
+    }
+    .fonctionnement-card:hover {
+      cursor: pointer;
+      .fa-solid {
         color: $numbering-color;
       }
     }
