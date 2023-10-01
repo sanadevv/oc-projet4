@@ -204,7 +204,10 @@ body {
   font-size: 20px;
   color: #7e7e7e;
 }
-.fonctionnement-list li .fa-store {
+.fonctionnement-list .fonctionnement-card:hover {
+  cursor: pointer;
+}
+.fonctionnement-list .fonctionnement-card:hover .fa-solid {
   color: #9356dc;
 }
 
